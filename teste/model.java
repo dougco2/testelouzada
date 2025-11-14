@@ -9,7 +9,7 @@ public class Pedido implements Comparable<Pedido> {
     private String sabor; [cite: 26]
     private String tamanho; // P, M, G [cite: 27]
     private double valor; [cite: 27]
-    private int tempoPreparoEstimado; // Para PriorityQueue [cite: 45]
+    private int tempoPreparoEstimado; 
 
     // Construtor
     public Pedido(int numero, String cliente, String sabor, String tamanho, double valor, int tempoPreparoEstimado) {
@@ -27,7 +27,7 @@ public class Pedido implements Comparable<Pedido> {
     public double getValor() { return valor; }
     public int getTempoPreparoEstimado() { return tempoPreparoEstimado; }
 
-    // Método toString para listagem
+ 
     @Override
     public String toString() {
         return "Pedido{" +
