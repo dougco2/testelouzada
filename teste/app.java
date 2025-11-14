@@ -42,7 +42,7 @@ public class Main {
         service.adicionarPrioritario(p4);
         service.adicionarPrioritario(p5);
         
-        System.out.println("Próximo prioritário (o mais rápido - 10 min): " + service.proximoPrioritario()); // Deve ser p4
+        System.out.println("Próximo prioritário (o mais rápido - 10 min): " + service.proximoPrioritario()); 
         System.out.println("\n---------------------------------\n");
 
         service.cancelarPedido(p3); 
@@ -50,8 +50,8 @@ public class Main {
         System.out.println("Recuperando último cancelado (Pop): " + service.pedidosCancelados.pop());
         System.out.println("\n---------------------------------\n");
         
-        Pedido entregue1 = service.entregarProximoPedido(); // Deve ser p1
-        Pedido entregue2 = service.entregarProximoPedido(); // Deve ser p2
+        Pedido entregue1 = service.entregarProximoPedido(); 
+        Pedido entregue2 = service.entregarProximoPedido(); 
 
         service.registrarVenda(entregue1);
         service.registrarVenda(entregue2);
